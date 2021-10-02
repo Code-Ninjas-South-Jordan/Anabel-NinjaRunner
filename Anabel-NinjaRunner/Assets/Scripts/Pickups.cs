@@ -18,6 +18,7 @@ public class Pickups : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        print("you are not normal ");
         if(other.gameObject.CompareTag("coin"))
         {
             score++;
