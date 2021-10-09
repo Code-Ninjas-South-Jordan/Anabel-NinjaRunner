@@ -9,11 +9,13 @@ public class Pickups : MonoBehaviour
     public Text scoreText;
     [Header("Starting Score")]
     public int score;
+    
     public ParticleSystem Pickup;
 
     void Start()
     {
-       //Pickup.Stop();
+       
+       Pickup.Stop();
     }
 
     void OnTriggerEnter(Collider other)
@@ -24,7 +26,7 @@ public class Pickups : MonoBehaviour
             score++;
             scoreText.text = "" + score;
             Destroy(other.gameObject);  
-            //Pickup.Start();
+            Pickup.Play();
         }
     }
 }

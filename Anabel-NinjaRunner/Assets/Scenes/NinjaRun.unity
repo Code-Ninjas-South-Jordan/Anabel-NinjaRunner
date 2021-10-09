@@ -5941,7 +5941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1498849067}
   score: 0
-  pickup: {fileID: 1175970791}
+  Pickup: {fileID: 1175970791}
 --- !u!114 &1045813626
 MonoBehaviour:
   m_ObjectHideFlags: 0
